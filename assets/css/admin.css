@@ -1,0 +1,130 @@
+/* GST Invoice Generator Admin Styles */
+
+.wgig-download-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#signature-image-preview {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#signature-image-preview img {
+    max-width: 200px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #fff;
+}
+
+.wgig-download-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: #0073aa;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+.wgig-download-btn:hover {
+    background: #e6e6e6;
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.column-invoice_number a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.column-invoice_number a svg {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#woocommerce-order-actions .wc-action-button-wgig_download_invoice::after {
+    font-family: Dashicons;
+    content: "\f316";
+}
+
+#woocommerce-order-actions .wc-action-button-wgig_generate_invoice::after {
+    font-family: Dashicons;
+    content: "\f313";
+}
+
+/* Order List Invoice Action Button */
+.order-status mark.wgig_download_invoice {
+    background: #efefef;
+    color: #0073aa;
+    padding: 2px 8px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.order-status mark.wgig_download_invoice:hover {
+    background: #e6e6e6;
+}
+
+.order-status mark.wgig_download_invoice::after {
+    font-family: 'Dashicons';
+    content: "\f316";
+    margin-left: 3px;
+}
+
+.order-status mark.wgig_generate_invoice {
+    background: #efefef;
+    color: #555;
+    padding: 2px 8px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.order-status mark.wgig_generate_invoice:hover {
+    background: #e6e6e6;
+}
+
+.order-status mark.wgig_generate_invoice::after {
+    font-family: 'Dashicons';
+    content: "\f313";
+    margin-left: 3px;
+}
+
+/* Make sure buttons are visible in the order list */
+.widefat .column-invoice_number {
+    width: 120px;
+    text-align: center;
+}
+
+.widefat .column-invoice_number a {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Ensure buttons are visible in the order edit page */
+#woocommerce-order-actions .wc-action-button-wgig_download_invoice,
+#woocommerce-order-actions .wc-action-button-wgig_generate_invoice {
+    display: inline-block !important;
+    padding: 0 !important;
+    height: 2em !important;
+    width: 2em !important;
+    overflow: hidden !important;
+    position: relative !important;
+    text-decoration: none !important;
+    border-radius: 2px !important;
+    background: #f7f7f7 !important;
+    border: 1px solid #ccc !important;
+    text-indent: -9999px !important;
+    color: #0073aa !important;
+}
+
+#woocommerce-order-actions .wc-action-button-wgig_download_invoice:hover,
+#woocommerce-order-actions .wc-action-button-wgig_generate_invoice:hover {
+    background-color: #e6e6e6 !important;
+}
